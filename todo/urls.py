@@ -24,5 +24,5 @@ urlpatterns = [
     path('loginn/',views.login_view),
     path('todo/',views.todo),
     path('signup/', views.signout_view ,name='signout'),
-    path('edit_todo/<int:srno>/', views.edit_todo, name='edit_todo'),
+    path('edit_todo/<int:serial_number>/', views.edit_todo, name='edit_todo'),
 ]

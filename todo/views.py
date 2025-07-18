@@ -50,8 +50,10 @@ def signout_view(request):
 
 
 
-def edit_todo(request, srno):
-    obj = get_object_or_404(TODO, srno=srno, user=request.user)
+def edit_todo(request, serial_number):
+    obj = get_object_or_404(TODO, serial_number=serial_number, user=request.user)
+    # rest of the code unchanged
+
 
     if request.method == 'POST':
         title = request.POST.get('title')
